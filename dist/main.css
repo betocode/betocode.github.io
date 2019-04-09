@@ -192,7 +192,7 @@ header {
 
 /* contact */
 #contact {
-  height: 82vh;
+  height: 83vh;
   background-color: yellow;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   display: flex;
