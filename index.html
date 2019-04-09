@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <title></title>
+        <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div id="header">
+    </div>
+    <div class="page-wraper">
+
+
+
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#aboutme">SOBRE O DEV</a></li>
+            <li><a href="#projects">PROJETOS</a></li>
+            <li><a href="#contact">CONTATO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="showcase">
+          <div class="showcase-bg">
+          </div>
+          <div class="bg">
+          </div>
+          <div class="showcase-content">
+            <h1>Roberto <span class="yellow">Alves</span></h1>
+            <p>Front-end Developer</p>
+            <a href="#aboutme">sobre o dev</a>
+          </div>
+
+      </section>
+
+      <section id="aboutme">
+        <div class="aboutme_content">
+          <h1>Quem sou eu</h1>
+          <p>Meu nome é Roberto Alves, tenho 23 anos, sou natural do Rio de Janeiro e estudo desenvolvimento web desde janeiro de 2019.</p>
+          <p>Grande parte do meu aprendizado foi através do <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>, <a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>, e entre outros canais do youtube.</p>
+          <p>Atualmente estou estudando ferramentas como SASS, git e Jquery.</p>
+          <h1>Minhas Ferramentas</h1>
+          <ul>
+            <li>HTML5 <i class="fab fa-html5"></i></li>
+            <li>CSS3 <i class="fab fa-css3-alt"></i></li>
+            <li>JAVASCRIPT <i class="fab fa-js"></i></li>
+            <li>SASS <i class="fab fa-sass"></i> </li>
+            <li>GIT <i class="fab fa-git-square"></i> </li>
+          </ul>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="projects_title">
+          <h2>Meus Projetos</h2>
+        </div>
+        <div class="project_list">
+          <div class="project_item">
+            <div class="project_item_photo item_1">
+              <div class="project_item_description">
+              <p>MECBOOST</p>
+              <a href="https://github.com/betocode/mecjob" target="_blank">CODIGO</a>
+              </div>
+            </div>
+          </div>
+          <div class="project_item">
+            <div class="project_item_photo item_2">
+              <div class="project_item_description">
+              <p>PEQUENOS CODIGOS</p>
+              <a href="https://github.com/betocode/basicJS" target="_blank">CODIGO</a>
+              </div>
+            </div>
+          </div>
+          <div class="project_item">
+            <div class="project_item_photo item_3">
+              <div class="project_item_description">
+              <p>BIBELU FESTAS</p>
+              <a href="https://github.com/betocode/bibelu" target="_blank">CODIGO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="form">
+        <form action="mailto:betogg@outlook.com.br" method="post" >
+          <div class="form1">
+            <h1>FALE COMIGO!</h1>
+          <label>Nome</label><input type="text" name="" placeholder="Digite seu nome">
+          </div>
+        <div class="form1">
+          <label>Email</label><input type="email" name="" placeholder="Digite seu email">
+</div><div class="form1">
+          <label>Telefone</label><input type="text" name="" placeholder="Digite seu numero">
+</div><div class="form1">
+<label>Mensagem</label><textarea name="" ></textarea>
+          <div class="form1">
+            <button type="submit" name="button">ENVIAR</button>
+          </div>
+          </div>
+        </form>
+        </div>
+      </section>
+    </div>
+<footer>
+  <div class="footer">
+    <p>Site feito por Roberto Alves | Entre em <a href="#contact">contato</a></p>
+  </div>
+</footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 600, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</html>
