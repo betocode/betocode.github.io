@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "sass": "node-sass -w scss/ -o dist /css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist /css/ --recursive"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.11.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betocode/betocode.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/betocode/betocode.github.io/issues"
+  },
+  "homepage": "https://github.com/betocode/betocode.github.io#readme"
 }

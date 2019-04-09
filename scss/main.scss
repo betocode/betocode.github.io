@@ -287,8 +287,20 @@ footer{
   a{
     text-decoration:none;
     color:yellow;
+
+    }
+    i{
+      display:inline-block;
+      font-size:2rem;
+      margin-right:1rem;
+      &:hover{
+        color:white;
+        background-color:black;
+      }
+    }
+
   }
-}
+
 /* keyframes */
 @keyframes first_load{
   0%{
