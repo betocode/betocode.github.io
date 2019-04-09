@@ -30,18 +30,31 @@ header{
   box-shadow:0px 2px 5px 0px rgba(0,0,0,0.75);
   background-color:black;
     nav{
+      label{
+        font-size:2rem;
+        line-height:70px;
+        margin:0 40px 0 0;
+        display:none;
+        width:2rem;
+        float:right;
+      }
+      #toggle{
+        display:none;
+      }
       ul{
+        clear:right;
         display:flex;
         justify-content:center;
         li{
-          flex-basis:12.5%;
+          flex-basis:15%;
           a{
             padding:10px 0px;
             display:block;
             color:white;
             text-decoration:none;
             text-align:center;
-            font-size:1.1rem;
+            font-size:1rem;
+            font-weight:bolder;
             &:hover{
               background-color:white;
               color:black;
@@ -226,7 +239,7 @@ color:white;
 }
 /* contact */
 #contact{
-    height:80vh;
+    height:82vh;
     background-color:yellow;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     display:flex;
@@ -278,29 +291,33 @@ color:white;
 /* footer */
 footer{
   background-color:black;
-  height:5rem;
+  height:6rem;
   color:white;
   font-weight:bolder;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
-  a{
-    text-decoration:none;
-
-
-    }
-    i{
-      
-      color:yellow;
-      display:inline-block;
-      font-size:1.8rem;
-      margin-right:1rem;
-      &:hover{
-        color:white;
-        background-color:black;
-      }
-    }
+  span{
+    font-size:1.4rem;
   }
+  i{
+    font-size:1.8rem;
+  }
+  .footer{
+    padding:0.3rem;
+      i{
+        color:yellow;
+        display:inline-block;
+        font-size:1.5rem;
+        margin-right:1rem;
+        &:hover{
+          color:white;
+          background-color:black;
+        }
+      }
+  }
+}
 
 /* keyframes */
 @keyframes first_load{
@@ -332,7 +349,32 @@ footer{
       }
     }
 
+/* media */
+
 @media screen and (max-width: 800px){
+  html{
+      overflow-x:hidden;
+  }
+  header{
+    nav{
+      label{
+        display:block;
+        cursor:pointer;
+        }
+      #toggle:checked + ul{
+        display:block;
+      }
+      ul{
+        display:none;
+        justify-content:space-between;
+        flex-direction:column;
+        li{
+          a:active{
+          }
+        }
+      }
+  }
+}
   #showcase{
     .showcase-content{
     a{
@@ -340,13 +382,11 @@ footer{
     }
   }
   }
-
  .project_list{
    display:block;
    .project_item{
      background-color:blue;
      width:100%;
-
    }
  }
  #aboutme{
@@ -354,7 +394,7 @@ footer{
  }
  #contact{
    clip-path: polygon(100% 0, 90% 55%, 100% 100%, 0 100%, 10% 54%, 0 0);
-
+   height:90vh;
  .form{
    flex-basis:80%;
  }
