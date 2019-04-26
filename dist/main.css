@@ -9,6 +9,9 @@
 .yellow {
   color: #e1d816; }
 
+body {
+  background-color: #1a1a1a; }
+
 ul {
   list-style: none; }
 
@@ -45,7 +48,7 @@ header {
         flex: 7; }
       header nav ul li #logo {
         text-align: left;
-        color: #e1d815; }
+        color: #e1d816; }
         header nav ul li #logo:hover {
           background-color: inherit;
           color: #e1d816; }
