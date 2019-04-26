@@ -6,8 +6,12 @@
   line-height: 1.5;
   font-family: verdana; }
 
-body{
-  background-color:black;}
+.yellow {
+  color: #e1d816; }
+
+body {
+  background-color: #1a1a1a; }
+
 ul {
   list-style: none; }
 
@@ -20,8 +24,9 @@ header {
   width: 100%;
   opacity: 1;
   z-index: 10;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: black; }
+  box-shadow: 0px 2px 5px 0px rgba(26, 26, 26, 0.75);
+  background-color: #1a1a1a;
+  color: #e6e6e6; }
   header nav label {
     font-size: 2rem;
     line-height: 70px;
@@ -34,20 +39,31 @@ header {
   header nav ul {
     clear: right;
     display: flex;
-    justify-content: center; }
+    justify-content: flex-end;
+    margin: 0 1rem; }
     header nav ul li {
-      flex-basis: 15%; }
-      header nav ul li a {
-        padding: 10px 0px;
+      flex: 1.5;
+      padding: 0 1rem; }
+      header nav ul li:first-child {
+        flex: 7; }
+      header nav ul li #logo {
+        text-align: left;
+        color: #e1d816; }
+        header nav ul li #logo:hover {
+          background-color: inherit;
+          color: #e1d816; }
+      header nav ul li .list-item {
+        padding: 0.7rem 0px;
         display: block;
-        color: white;
+        color: #e6e6e6;
         text-decoration: none;
         text-align: center;
         font-size: 1rem;
-        font-weight: bolder; }
-        header nav ul li a:hover {
-          background-color: white;
-          color: black; }
+        font-weight: bolder;
+        cursor: pointer; }
+        header nav ul li .list-item:hover {
+          background-color: #e1d816;
+          color: #1a1a1a; }
 
 /* showcase */
 #showcase {
@@ -72,7 +88,7 @@ header {
     left: 0;
     right: 0;
     height: inherit;
-    background-color: black;
+    background-color: #1a1a1a;
     z-index: 2;
     opacity: 0.6; }
   #showcase .showcase-content {
@@ -81,10 +97,10 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-    color: white;
+    color: #e6e6e6;
     animation: first_load 500ms ease-in; }
     #showcase .showcase-content h1 {
-      text-shadow: 2px 2px black;
+      text-shadow: 2px 2px #1a1a1a;
       font-size: 5rem; }
     #showcase .showcase-content p {
       font-size: 3rem; }
@@ -92,23 +108,23 @@ header {
       display: block;
       padding: 1rem;
       color: black;
-      background-color: yellow;
+      background-color: #e1d816;
       width: 20%;
       text-decoration: none;
       margin: 40px auto 0 auto;
       border-radius: 2rem;
-      border: 1px solid black; }
+      border: 1px solid #1a1a1a; }
       #showcase .showcase-content a:hover {
-        color: yellow;
-        background: black;
-        border: 1px solid white; }
+        color: #e1d816;
+        background: #1a1a1a;
+        border: 1px solid #e6e6e6; }
 
 /* aboutme */
 #aboutme {
   height: 100%;
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  background-color: yellow;
-  border-bottom: 1px solid black; }
+  background-color: #e1d816;
+  border-bottom: 1px solid #e1d816; }
   #aboutme .aboutme_content {
     width: 80%;
     margin: 0 10% 2% 2.5%; }
@@ -119,14 +135,14 @@ header {
       #aboutme .aboutme_content h1:after {
         content: "";
         display: block;
-        border: 1px solid black;
+        border: 1px solid #1a1a1a;
         width: 90%; }
     #aboutme .aboutme_content a {
       text-decoration: none;
-      color: black;
+      color: #1a1a1a;
       font-weight: bolder; }
       #aboutme .aboutme_content a:hover {
-        font-size: 1.1rem; }
+        text-decoration: underline; }
     #aboutme .aboutme_content ul li {
       font-weight: 800;
       font-size: 1.2rem; }
@@ -135,9 +151,9 @@ header {
 
 /* PROJECTS */
 #projects {
-  background-color: black;
+  background-color: #1a1a1a;
   height: 100%;
-  color: white; }
+  color: #e6e6e6; }
   #projects .projects_title {
     animation: slide 1.5s infinite alternate-reverse;
     text-align: center;
@@ -157,10 +173,10 @@ header {
 */ }
     #projects .project_list .project_item {
       margin: 1rem;
-      background-color: white;
+      background-color: #e6e6e6;
       min-width: 320px;
       min-height: 300px;
-      border: 4px solid yellow;
+      border: 4px solid #e1d816;
       flex: 1; }
       #projects .project_list .project_item .item_1 {
         background-image: url("../img/pathfinder.jpg"); }
@@ -180,8 +196,8 @@ header {
         #projects .project_list .project_item .project_item_photo .project_item_description {
           height: 100%;
           visibility: hidden;
-          background-color: black;
-          color: white;
+          background-color: #1a1a1a;
+          color: #e6e6e6;
           padding: 20px;
           opacity: 0.85;
           text-align: center;
@@ -190,27 +206,28 @@ header {
           justify-content: center; }
           #projects .project_list .project_item .project_item_photo .project_item_description a {
             text-decoration: none;
-            color: yellow; }
+            color: #e1d816; }
 
 /* contact */
 #contact {
+  margin: 1.1rem 0;
   height: 83vh;
-  background-color: yellow;
+  background-color: #e1d816;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   display: flex;
   justify-content: center;
   align-items: center; }
   #contact .form {
-    background-color: black;
-    color: yellow;
+    background-color: #1a1a1a;
+    color: #e1d816;
     padding: 1rem;
     width: 40%;
     text-align: center;
     border-radius: 2rem;
-    box-shadow: 0 0 10px 0 black; }
+    box-shadow: 0 0 10px 0 #1a1a1a; }
     #contact .form .form1 {
       padding: 10px 0px;
-      border: 1px solid black; }
+      border: 1px #1a1a1a; }
       #contact .form .form1 label {
         text-transform: uppercase;
         text-align: left;
@@ -223,42 +240,42 @@ header {
         font-size: 1.2rem;
         display: block;
         padding: 0.5rem 0px;
-        color: black;
-        background-color: yellow;
+        color: #1a1a1a;
+        background-color: #e1d816;
         text-decoration: none;
         width: 50%;
         margin: auto;
-        border: 1px solid black;
+        border: 1px solid #1a1a1a;
         border-radius: 1em;
         cursor: pointer; }
         #contact .form .form1 button:hover {
-          color: black;
-          background-color: white; }
+          color: #1a1a1a;
+          background-color: #e6e6e6; }
 
 /* footer */
 footer {
-  background-color: black;
+  background-color: #1a1a1a;
   height: 6rem;
-  color: white;
+  color: #e6e6e6;
   font-weight: bolder;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  footer span {
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem; }
+  footer .whatsapp i {
+    font-size: 1.5rem; }
+  footer .footer .border-right {
+    border-right: 0.2rem solid #e6e6e6;
+    margin-right: 0.5rem; }
+  footer .footer i {
+    color: #e1d816;
+    margin-right: 0.5rem;
     font-size: 1.4rem; }
-  footer i {
-    font-size: 1.8rem; }
-  footer .footer {
-    padding: 0.3rem; }
-    footer .footer i {
-      color: yellow;
-      display: inline-block;
-      font-size: 1.5rem;
-      margin-right: 1rem; }
-      footer .footer i:hover {
-        color: white;
-        background-color: black; }
+    footer .footer i:hover {
+      color: #e6e6e6;
+      background-color: #1a1a1a; }
 
 /* keyframes */
 @keyframes first_load {
@@ -283,11 +300,9 @@ footer {
 
 @keyframes slide {
   0% {
-    transform: rotateX(90deg);
-    opacity: 0; }
+    transform: rotateX(90deg); }
   100% {
-    transform: rotateX(0);
-    opacity: 1; } }
+    transform: rotateX(0); } }
 
 /* media */
 @media screen and (max-width: 800px) {
@@ -300,8 +315,11 @@ footer {
     display: block; }
   header nav ul {
     display: none;
+    margin: 0;
     justify-content: space-between;
     flex-direction: column; }
+    header nav ul li #logo {
+      display: none; }
   #showcase .showcase-content a {
     width: 50%; }
   .project_list {
