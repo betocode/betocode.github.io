@@ -4,13 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: verdana; }
+  font-family: "Montserrat", sans-serif; }
 
 .yellow {
-  color: #e1d816; }
+  color: #eece1a; }
 
 body {
-  background-color: #1a1a1a; }
+  background-color: #444; }
 
 ul {
   list-style: none; }
@@ -25,7 +25,7 @@ header {
   opacity: 1;
   z-index: 10;
   box-shadow: 0px 2px 5px 0px rgba(26, 26, 26, 0.75);
-  background-color: #1a1a1a;
+  background-color: #444;
   color: #e6e6e6; }
   header nav label {
     font-size: 2rem;
@@ -48,10 +48,10 @@ header {
         flex: 7; }
       header nav ul li #logo {
         text-align: left;
-        color: #e1d816; }
+        color: #eece1a; }
         header nav ul li #logo:hover {
           background-color: inherit;
-          color: #e1d816; }
+          color: #eece1a; }
       header nav ul li .list-item {
         padding: 0.7rem 0px;
         display: block;
@@ -60,10 +60,11 @@ header {
         text-align: center;
         font-size: 1rem;
         font-weight: bolder;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all 200ms linear; }
         header nav ul li .list-item:hover {
-          background-color: #e1d816;
-          color: #1a1a1a; }
+          background-color: #eece1a;
+          color: #444; }
 
 /* showcase */
 #showcase {
@@ -89,7 +90,7 @@ header {
     left: 0;
     right: 0;
     height: inherit;
-    background-color: #1a1a1a;
+    background-color: #444;
     z-index: 2;
     opacity: 0.6; }
   #showcase .showcase-content {
@@ -102,7 +103,7 @@ header {
     color: #e6e6e6;
     animation: first_load 500ms ease-in; }
     #showcase .showcase-content h1 {
-      text-shadow: 2px 2px #1a1a1a;
+      text-shadow: 2px 2px #444;
       font-size: 3.5rem; }
     #showcase .showcase-content p {
       font-size: 2rem; }
@@ -110,24 +111,28 @@ header {
       display: block;
       padding: 1rem;
       color: black;
-      background-color: #e1d816;
+      background-color: #eece1a;
       width: 20%;
       text-decoration: none;
       margin: 40px auto 0 auto;
       border-radius: 2rem;
-      border: 1px solid #1a1a1a; }
+      border: 1px solid #444; }
       #showcase .showcase-content a:hover {
-        color: #e1d816;
-        background: #1a1a1a;
+        color: #eece1a;
+        background: #444;
         border: 1px solid #e6e6e6; }
 
 /* aboutme */
 #aboutme {
   width: 100%;
-  height: 100%;
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  background-color: #e1d816;
-  border-bottom: 1px solid #e1d816; }
+  height: 100vh;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  background-color: #eece1a;
+  border-bottom: 1px solid #eece1a;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   #aboutme .aboutme_content {
     width: 80%;
     margin: 0 10% 2% 2.5%; }
@@ -138,11 +143,11 @@ header {
       #aboutme .aboutme_content h1:after {
         content: "";
         display: block;
-        border: 1px solid #1a1a1a;
-        width: 90%; }
+        border: 1px solid #444;
+        width: 100%; }
     #aboutme .aboutme_content a {
       text-decoration: none;
-      color: #1a1a1a;
+      color: #444;
       font-weight: bolder; }
       #aboutme .aboutme_content a:hover {
         text-decoration: underline; }
@@ -154,7 +159,7 @@ header {
 
 /* PROJECTS */
 #projects {
-  background-color: #1a1a1a;
+  background-color: #444;
   height: 100%;
   color: #e6e6e6; }
   #projects .projects_title {
@@ -177,14 +182,14 @@ header {
     #projects .project_list .project_item {
       margin: 1rem;
       background-color: #e6e6e6;
-      min-width: 320px;
+      min-width: 22rem;
       min-height: 300px;
-      border: 4px solid #e1d816;
-      flex: 1; }
+      border: 4px solid #eece1a;
+      flex-basis: 28%; }
       #projects .project_list .project_item .item_1 {
         background-image: url("../img/pathfinder.jpg"); }
       #projects .project_list .project_item .item_2 {
-        background-image: url("../img/js.jpg"); }
+        background-image: url("../img/grocery1.jpeg"); }
       #projects .project_list .project_item .item_3 {
         background-image: url("../img/cover1.jpg"); }
       #projects .project_list .project_item .project_item_photo {
@@ -199,7 +204,7 @@ header {
         #projects .project_list .project_item .project_item_photo .project_item_description {
           height: 100%;
           visibility: hidden;
-          background-color: #1a1a1a;
+          background-color: #444;
           color: #e6e6e6;
           padding: 20px;
           opacity: 0.85;
@@ -209,28 +214,29 @@ header {
           justify-content: center; }
           #projects .project_list .project_item .project_item_photo .project_item_description a {
             text-decoration: none;
-            color: #e1d816; }
+            color: #eece1a; }
 
 /* contact */
 #contact {
   margin: 1.1rem 0;
   height: 83vh;
-  background-color: #e1d816;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background-color: #eece1a;
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
   display: flex;
   justify-content: center;
   align-items: center; }
   #contact .form {
-    background-color: #1a1a1a;
-    color: #e1d816;
+    background-color: #444;
+    color: #eece1a;
     padding: 1rem;
     width: 40%;
     text-align: center;
     border-radius: 2rem;
-    box-shadow: 0 0 10px 0 #1a1a1a; }
+    box-shadow: 0 0 10px 0 #444; }
     #contact .form .form1 {
       padding: 10px 0px;
-      border: 1px #1a1a1a; }
+      border: 1px #444; }
       #contact .form .form1 label {
         text-transform: uppercase;
         text-align: left;
@@ -243,21 +249,21 @@ header {
         font-size: 1.2rem;
         display: block;
         padding: 0.5rem 0px;
-        color: #1a1a1a;
-        background-color: #e1d816;
+        color: #444;
+        background-color: #eece1a;
         text-decoration: none;
         width: 50%;
         margin: auto;
-        border: 1px solid #1a1a1a;
+        border: 1px solid #444;
         border-radius: 1em;
         cursor: pointer; }
         #contact .form .form1 button:hover {
-          color: #1a1a1a;
+          color: #444;
           background-color: #e6e6e6; }
 
 /* footer */
 footer {
-  background-color: #1a1a1a;
+  background-color: #444;
   height: 6rem;
   color: #e6e6e6;
   font-weight: bolder;
@@ -273,12 +279,12 @@ footer {
     border-right: 0.2rem solid #e6e6e6;
     margin-right: 0.5rem; }
   footer .footer i {
-    color: #e1d816;
+    color: #eece1a;
     margin-right: 0.5rem;
     font-size: 1.4rem; }
     footer .footer i:hover {
       color: #e6e6e6;
-      background-color: #1a1a1a; }
+      background-color: #444; }
 
 /* keyframes */
 @keyframes first_load {
