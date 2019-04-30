@@ -187,11 +187,11 @@ header {
       border: 4px solid #eece1a;
       flex-basis: 28%; }
       #projects .project_list .project_item .item_1 {
-        background-image: url("../img/pathfinder.jpg"); }
+        background-image: url("../img/product-5.png"); }
       #projects .project_list .project_item .item_2 {
         background-image: url("../img/grocery1.jpeg"); }
       #projects .project_list .project_item .item_3 {
-        background-image: url("../img/cover1.jpg"); }
+        background-image: url("../img/pathfinder.jpg"); }
       #projects .project_list .project_item .project_item_photo {
         position: relative;
         background-position: center;
@@ -208,11 +208,14 @@ header {
           color: #e6e6e6;
           padding: 20px;
           opacity: 0.85;
-          text-align: center;
+          text-align: justify;
           display: flex;
           flex-direction: column;
           justify-content: center; }
+          #projects .project_list .project_item .project_item_photo .project_item_description h3 {
+            text-align: center; }
           #projects .project_list .project_item .project_item_photo .project_item_description a {
+            text-align: center;
             text-decoration: none;
             color: #eece1a; }
 

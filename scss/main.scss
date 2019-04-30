@@ -227,14 +227,15 @@ header {
       min-height: 300px;
       border: 4px solid $yellow;
       flex-basis: 28%;
+      
       .item_1 {
-        background-image: url("../img/pathfinder.jpg");
+        background-image: url("../img/product-5.png");
       }
       .item_2 {
         background-image: url("../img/grocery1.jpeg");
       }
       .item_3 {
-        background-image: url("../img/cover1.jpg");
+        background-image: url("../img/pathfinder.jpg");
       }
       .project_item_photo {
         position: relative;
@@ -254,11 +255,15 @@ header {
           color: $white;
           padding: 20px;
           opacity: 0.85;
-          text-align: center;
+          text-align: justify;
           display: flex;
           flex-direction: column;
           justify-content: center;
+          h3{
+            text-align:center;
+          }
           a {
+            text-align:center;
             text-decoration: none;
             color: $yellow;
           }
