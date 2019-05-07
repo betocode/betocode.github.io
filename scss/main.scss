@@ -227,7 +227,7 @@ header {
       min-height: 300px;
       border: 4px solid $yellow;
       flex-basis: 28%;
-      
+
       .item_1 {
         background-image: url("../img/product-5.png");
       }
@@ -259,11 +259,11 @@ header {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          h3{
-            text-align:center;
+          h3 {
+            text-align: center;
           }
           a {
-            text-align:center;
+            text-align: center;
             text-decoration: none;
             color: $yellow;
           }
@@ -439,6 +439,7 @@ footer {
     }
   }
   #aboutme {
+    height: 100%;
     clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
   }
   #contact {
