@@ -232,10 +232,10 @@ header {
         background-image: url("../img/product-5.png");
       }
       .item_2 {
-        background-image: url("../img/grocery1.jpeg");
+        background-image: url("../img/github.png");
       }
       .item_3 {
-        background-image: url("../img/pathfinder.jpg");
+        background-image: url("../img/grocery1.jpeg");
       }
       .project_item_photo {
         position: relative;
@@ -263,9 +263,17 @@ header {
             text-align: center;
           }
           a {
+            width: 50%;
+            border-radius: 2rem;
+            background-color: $yellow;
             text-align: center;
             text-decoration: none;
-            color: $yellow;
+            margin: 0.4rem auto;
+            padding: 0.2rem 0;
+            color: $black;
+            &:hover {
+              font-weight: 800;
+            }
           }
         }
       }

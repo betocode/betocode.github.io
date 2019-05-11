@@ -189,9 +189,9 @@ header {
       #projects .project_list .project_item .item_1 {
         background-image: url("../img/product-5.png"); }
       #projects .project_list .project_item .item_2 {
-        background-image: url("../img/grocery1.jpeg"); }
+        background-image: url("../img/github.png"); }
       #projects .project_list .project_item .item_3 {
-        background-image: url("../img/pathfinder.jpg"); }
+        background-image: url("../img/grocery1.jpeg"); }
       #projects .project_list .project_item .project_item_photo {
         position: relative;
         background-position: center;
@@ -215,9 +215,16 @@ header {
           #projects .project_list .project_item .project_item_photo .project_item_description h3 {
             text-align: center; }
           #projects .project_list .project_item .project_item_photo .project_item_description a {
+            width: 50%;
+            border-radius: 2rem;
+            background-color: #eece1a;
             text-align: center;
             text-decoration: none;
-            color: #eece1a; }
+            margin: 0.4rem auto;
+            padding: 0.2rem 0;
+            color: #444; }
+            #projects .project_list .project_item .project_item_photo .project_item_description a:hover {
+              font-weight: 800; }
 
 /* contact */
 #contact {
