@@ -80,19 +80,10 @@ header {
     left: 0;
     right: 0;
     height: inherit;
-    background-image: url("../img/photo.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/photo3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1; }
-  #showcase .bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: inherit;
-    background-color: #444;
-    z-index: 2;
-    opacity: 0.6; }
   #showcase .showcase-content {
     width: 100%;
     z-index: 3;
@@ -126,12 +117,11 @@ header {
 #aboutme {
   width: 100%;
   height: 100vh;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
   background-color: #eece1a;
   border-bottom: 1px solid #eece1a;
   display: flex;
-  align-items: center;
   justify-content: center; }
   #aboutme .aboutme_content {
     width: 80%;
@@ -139,7 +129,7 @@ header {
     #aboutme .aboutme_content h1 {
       font-size: 2rem;
       text-transform: uppercase;
-      padding: 40px 0px 20px 0px; }
+      padding: 1rem 0px 20px 0px; }
       #aboutme .aboutme_content h1:after {
         content: "";
         display: block;
@@ -173,12 +163,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: stretch;
-    /*
-  grid-template-columns: 1fr 1fr;
-  grid-gap:3rem;
-  padding:1rem 1rem;
-*/ }
+    align-items: stretch; }
     #projects .project_list .project_item {
       margin: 1rem;
       background-color: #e6e6e6;
@@ -192,6 +177,12 @@ header {
         background-image: url("../img/github.png"); }
       #projects .project_list .project_item .item_3 {
         background-image: url("../img/sushi.jpeg"); }
+      #projects .project_list .project_item .item_4 {
+        background-image: url("../img/song.jpeg"); }
+      #projects .project_list .project_item .item_5 {
+        background-image: url("../img/rain.jpeg"); }
+      #projects .project_list .project_item .item_6 {
+        background-image: url("../img/calc.jpg"); }
       #projects .project_list .project_item .project_item_photo {
         position: relative;
         background-position: center;
@@ -231,8 +222,8 @@ header {
   margin: 1.1rem 0;
   height: 83vh;
   background-color: #eece1a;
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   display: flex;
   justify-content: center;
   align-items: center; }
