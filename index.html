@@ -1,230 +1,156 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140510303-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140510303-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-140510303-1");
+    </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-  gtag('config', 'UA-140510303-1');
-</script>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  
-  <title>Roberto | Front-end</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/main.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-</head>
+    <title>Roberto | Front-end</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <!-- header -->
-  <header>
+  <body>
+    <!-- NAVBAR-->
     <nav>
-      <label for="toggle" style="color:#e6e6e6;">&#9776;</label>
-      <input type="checkbox" id="toggle" />
-      <ul>
-        <li><span id="logo" class="list-item">ROBERTO ALVES</span></a></li>
-        <li><a class="list-item" href="#showcase">HOME</a></li>
-        <li><a class="list-item" href="#aboutme">SOBRE O DEV</a></li>
-        <li><a class="list-item" href="#projects">PROJETOS</a></li>
-        <li><a class="list-item" href="#contact">CONTATO</a></li>
+      <ul class="navbar">
+        <a class="nav-logo"><li>Roberto Dev</li></a>
+        <a class="nav-item" href="#showcase"><li>Home</li></a>
+        <a class="nav-item" href="#about"><li>About</li></a>
+        <a class="nav-item" href="#skills"><li>Skills</li></a>
+        <a class="nav-item" href="#projects"><li>Projects</li></a>
+        <a class="nav-item" href="#"><li>Contact</li></a>
       </ul>
     </nav>
-  </header>
-
-  <!-- showcase -->
-  <section id="showcase">
-    <div class="showcase-bg"></div>
-    <div class="showcase-content">
-      <h1>Roberto <span class="yellow">Alves</span></h1>
-      <p>Front-end Developer</p>
-      <a href="#aboutme">sobre o dev</a>
-    </div>
-  </section>
-  <!-- about me -->
-  <section id="aboutme">
-    <div class="aboutme_content">
-      <h1>Quem sou eu</h1>
-      <p>
-        Meu nome é Roberto Alves, tenho 23 anos, sou natural do Rio de
-        Janeiro e estudo desenvolvimento web com ênfase em front-end
-      </p>
-      <p>
-        Grande parte do meu aprendizado foi através do
-        <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>,
-        <a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>,
-        entre outros .
-      </p>
-      <p>Atualmente estou estudando React .</p>
-      <p>
-        Consigo falar fluentemente português e inglês, e possuo nível
-        intermediário de espanhol.
-      </p>
-      <h1>Minhas Ferramentas</h1>
-      <ul>
-        <li>HTML5 <i class="fab fa-html5"></i></li>
-        <li>CSS3 <i class="fab fa-css3-alt"></i></li>
-        <li>JAVASCRIPT <i class="fab fa-js"></i></li>
-        <li>SASS <i class="fab fa-sass"></i></li>
-        <li>GIT <i class="fab fa-git-square"></i></li>
-        <li>BOOTSTRAP <i class="fab fa-bootstrap"></i></li>
-        <li>REACT.JS <i class="fab fa-react"></i></li>
-      </ul>
-    </div>
-  </section>
-  <!-- projects -->
-  <section id="projects">
-    <div class="projects_title">
-      <h2>Meus Projetos</h2>
-    </div>
-    <p style="text-align:center; padding:0 0 1.2rem 0;font-size:1.1rem">
-      Passe o mouse nas fotos para mais detalhes
-    </p>
-    <div class="project_list">
-      <div class="project_item">
-        <div class="project_item_photo item_1">
-          <div class="project_item_description">
-            <h3>E-COMMERCE</h3>
-            <p>
-              Site feito em React, Styled Components e Bootstrap usando contextAPI, foi meu primeiro site E-commerce,
-              consegui colocar
-              em praticas diversos conceitos que aprendi em Reactjs
-            </p>
-            <a href="https://react-phone-beto.netlify.com/" target="_blank">SITE</a>
-            <a href="https://github.com/betocode/react-phone-store" target="_blank">CÓDIGO</a>
-          </div>
-         
+    <section id="showcase">
+      <h1>Professional Web Developer</h1>
+      <p>Coding is my hobby, and i love what i do!</p>
+      <a href="#about">About me</a>
+    </section>
+    <section id="about" class="container">
+      <div class="about-img"></div>
+      <div class="about-me">
+        <h2>About me</h2>
+        <p>
+          Im a professional web-developer from Rio de Janeiro - Brasil.
+          <br />Coding started as a hobby for me, but eventually it became my
+          passion and I started to look for challenges to put my coding skills
+          at test.
+        </p>
+        <a href="#skills">My Skills</a>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <div class="container">
+        <div class="front">
+          <ul class="stack">
+            <li>Front-End</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>SASS</li>
+            <li>Bootstrap</li>
+            <li>ReactJS</li>
+          </ul>
+        </div>
+        <div class="back">
+          <ul class="stack">
+            <li>Back-End</li>
+            <li>NodeJS</li>
+            <li>PHP</li>
+            <li>WordPress</li>
+            <li>Firebase</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="tools">
+          <ul class="stack">
+            <li>Tools</li>
+            <li>Git - Version Control</li>
+            <li>Visual Studio</li>
+            <li>Grunt</li>
+            <li>NPM</li>
+            <li>Composer</li>
+          </ul>
         </div>
       </div>
-      <div class="project_item">
-        <div class="project_item_photo item_2">
-          <div class="project_item_description">
-            <h3>GITHUB SEARCH</h3>
-            <p>Website de busca de informações de usuários do github, usei React(router) e Bootstrap</p>
-            <a href="https://beto-github-search.netlify.com/" target="_blank">SITE</a>
-             <a href="https://github.com/betocode/github-search" target="_blank">CÓDIGO</a>
-          </div>
-        </div>
-     
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="whatsapp">
+        <p>
+          <i class="fab fa-whatsapp" style="padding:0px 20px;"> </i>(21) 9
+          6606-2339
+        </p>
       </div>
-      <div class="project_item">
-        <div class="project_item_photo item_3">
-          <div class="project_item_description">
-            <h3>Sushi SHOP</h3>
-            <p>Site que fiz baseado em um Sushi SHOP, utilizei Bootstrap e JQuery</p>
-            <a href="https://sushi-norte.netlify.com/" target="_blank">SITE</a>
-              <a href="https://github.com/betocode/Sushi" target="_blank">CÓDIGO</a>
-          </div>
-        </div>
+      <div class="footer">
+        <p>
+          <span class="border-right">Site feito por Roberto Alves </span>
+          <a
+            href="https://www.linkedin.com/in/roberto-alves888/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i></a
+          ><a href="https://github.com/betocode" target="_blank"
+            ><i class="fab fa-github-square"></i></a
+          ><a href="./cv/RESUMEWEB.pdf" target="_blank" dowload
+            ><i class="fas fa-file"></i
+          ></a>
+        </p>
       </div>
-      <div class="project_item">
-          <div class="project_item_photo item_4">
-            <div class="project_item_description">
-              <h3>Som Carioca</h3>
-              <p>Site que busca letras de musicas baseado em seu titulo, utilizei React e Bootstrap e axios para consumir a API</p>
-              <a href="https://somcarioca.netlify.com" target="_blank">SITE</a>
-                <a href="https://github.com/betocode/busca_musica" target="_blank">CÓDIGO</a>
-            </div>
-          </div>
-        </div>
-        <div class="project_item">
-            <div class="project_item_photo item_5">
-              <div class="project_item_description">
-                <h3>Clima APP</h3>
-                <p>Site de consulta de clima atual, utilizei React e Bootstrap</p>
-                <a href="https://beto-weather-app.netlify.com" target="_blank">SITE</a>
-                  <a href="https://github.com/betocode/weather-app" target="_blank">CÓDIGO</a>
-              </div>
-            </div>
-          </div>
-          <div class="project_item">
-              <div class="project_item_photo item_6">
-                <div class="project_item_description">
-                  <h3>Poupa APP</h3>
-                  <p>Site para calcular despesas baseado em um orçamento. Utilizei bootstrap e vanillaJS</p>
-                  <a href="https://betodespesas.netlify.com/" target="_blank">SITE</a>
-                    <a href="https://github.com/betocode/poupaappJS" target="_blank">CÓDIGO</a>
-                </div>
-              </div>
-            </div>
-    </div>
-  </section>
-  <!-- contact -->
-  <section id="contact">
-    <div class="form">
-      <form action="mailto:robertojr_@outlook.com.br" method="post">
-        <div class="form1">
-          <h1>FALE COMIGO!</h1>
-          <label>Nome</label><input type="text" name="" placeholder="Digite seu nome." />
-        </div>
-        <div class="form1">
-          <label>Email</label><input type="email" name="" placeholder="Digite seu email." />
-        </div>
-        <div class="form1">
-          <label>Telefone</label><input type="text" name="" placeholder="Digite seu número." />
-        </div>
-        <div class="form1">
-          <label>Mensagem</label><textarea name="" placeholder="Escreva sua mensagem."></textarea>
-          <div class="form1">
-            <button type="submit" name="button">ENVIAR</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
+    </footer>
+  </body>
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on("click", function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-  <!-- footer -->
-  <footer>
-    <div class="whatsapp">
-      <p>
-        <i class="fab fa-whatsapp" style="padding:0px 20px;"> </i>(21) 9
-        6606-2339
-      </p>
-    </div>
-    <div class="footer">
-      <p>
-        <span class="border-right">Site feito por Roberto Alves </span>
-        <a href="https://www.linkedin.com/in/roberto-alves888/" target="_blank"><i class="fab fa-linkedin"></i></a><a
-          href="https://github.com/betocode" target="_blank"><i class="fab fa-github-square"></i></a><a
-          href="./cv/RESUMEWEB.pdf" target="_blank" dowload><i class="fas fa-file"></i></a>
-      </p>
-    </div>
-  </footer>
-</body>
-<!-- scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function () {
-    // Add smooth scrolling to all links
-    $("a").on("click", function (event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+          // Store hash
+          var hash = this.hash;
 
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $("html, body").animate(
-          {
-            scrollTop: $(hash).offset().top
-          },
-          600,
-          function () {
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          }
-        );
-      } // End if
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            600,
+            function() {
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            }
+          );
+        } // End if
+      });
     });
-  });
-</script>
-
+  </script>
 </html>
